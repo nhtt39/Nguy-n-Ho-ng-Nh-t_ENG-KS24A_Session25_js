@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const checkNumber = (number) => {
+        let flag = 1;
+        if(number<1 || isNaN(number)===true){
+            return console.log(`du lieu khong hop le`)
+        }
+        for (let i = 2; i < number; i++) {
+          if (number % i === 0) {
+            flag++;
+          }
+        }
+        if (flag === 1) {
+          return console.log(`${number} la so nguyen to`);
+        } else {
+          return console.log(`${number} khong la so nguyen to`);
+        }
+        
+      };
+      const number1 = checkNumber(+prompt(`nhap mot so nguyen`));
+      console.log(number1);
+      
+    </script>
+  </body>
+</html>

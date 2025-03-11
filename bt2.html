@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const sum = (a,b) => {
+            return a + b;
+        };
+        let numberA = +prompt(`moi ban nhap so a`);
+        let numberB = +prompt(`moi ban nhap so b`);
+        if(numberA < 0 || numberB < 0 || isNaN(numberA)===true || isNaN(numberB)===true){
+            console.log(`du lieu khong hop le`);
+        }else{
+            const total=sum(numberA,numberB);
+            console.log(`${total}`);
+        }
+        
+    </script>
+</body>
+</html>
